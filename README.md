@@ -5,8 +5,7 @@ This set of scripts allows to automatically deploy Centos7-based HPC. Project's 
 Deployment steps:
 
 1) install the master node (a.k.a. server, head node) using default CenOS Live or Minimal ISO, boot the server, make sure the network is up, proceed further from its terminal.
-Do not add any users during initial installation of the head node (only root)
-Other users to be added after deployment of the HPC.
+Do not add any users during initial installation of the head node (only root). You will add other users after deployment of the HPC (withe scripts/newuser).
 
 2) get the updated version of this archive HPC_CentOS7.tar.gz
     2.1 From  https://centoshpc.wordpress.com  or https://github.com/aa3025/centos7hpc/
