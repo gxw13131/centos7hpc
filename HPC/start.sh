@@ -1,4 +1,4 @@
-# Run as sh ./start.sh isoname.iso
+254# Run as sh ./start.sh isoname.iso
 
 # Note: your external network interface must be configuured, up and running
 # It will be put in "external zone" of firewalld by this script
@@ -40,8 +40,7 @@ else
     echo "Here is the list of your network interfaces:"
 
     ip link show
-
-    echo "Enter your internal network interface here: (e.g. enp4s0), it will be configured with IP: 172.16.0.1 (zone internal):"
+echo "Enter your internal network interface here: (e.g. enp4s0), it will be configured with IP: 172.16.0.254 (zone internal):"
     read eth_int
 
     echo "Enter your external network interface name: (e.g. enp4s1):"
