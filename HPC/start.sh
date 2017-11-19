@@ -1,9 +1,10 @@
-# Run as ./start.sh isoname.iso
+# Run as sh ./start.sh isoname.iso
 
 # Note: your external network interface must be configuured, up and running
 # It will be put in "external zone" of firewalld by this script
 
 ### some prerequisites #### for e.g. "wget" and firewall
+chmod -R +x ./scripts/*
 
 yum -y install net-tools firewalld #NetworkManager
 
