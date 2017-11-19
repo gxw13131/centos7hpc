@@ -6,9 +6,9 @@ Follow these steps:
 Do not add any users during initial installation of the head node (only root)
 Other users to be added after deployment of the HPC.
 
-2) get the updated version of this archive HPC_CentOS7.tar.gz
-    2.1 From  https://centoshpc.wordpress.com
-    2.2 Uncompress the archive "tar xvf HPC_Centos7.tar.gz"
+2) get the updated version of this archive centos7hpc.tar.gz
+    2.1 From  https://github.com/aa3025/centos7hpc/archive/master.zip
+    2.2 Uncompress the archive "tar xvf master.tar.gz"
     2.3 If you failed to do above steps do not proceed further.
 
 3) cd HPC
@@ -17,7 +17,7 @@ Other users to be added after deployment of the HPC.
 
 5) The 2nd network adapter must be connected to the internal network of HPC (i.e. via switch or hub), where all the nodes will be booting from. All compute nodes must be connected to the same hub with their (not necessarily) 1st network adapter.
 
-4) Download CentOS7 install DVD (minimal is OK) and run "./start.sh CentOS7xxxx.iso" from this folder. Or run it with "./start.sh -d"  to download ISO during the installation.
+4) Download CentOS7 install DVD (minimal is OK) and run "sh ./start.sh CentOS7xxxx.iso" from this folder. Or run it with "sh ./start.sh -d"  to download ISO during the installation.
 
 5) Once start.sh finishes, go and power up all your compute nodes (its better to do it one-by-one in an orderly fasion, their hostnames will be based on theur DHCP addresses, so if you want any kind of "system" in their naming make sure they boot with interval, so that previous one already obtained IP before the next one boots). They must be BIOS-configured to boot from network (PXE boot).
 
