@@ -6,10 +6,15 @@ Deployment steps:
 1) install the master node (a.k.a. server, head node) using default CenOS Live or Minimal ISO, boot the server, make sure the network is up, proceed further from its terminal.
 Do not add any users during initial installation of the head node (only root). You will add other users after deployment of the HPC (with scripts/newuser).
 
-2) get the updated version of this archive HPC_CentOS7.tar.gz
+2) get the updated version of this archive
+
     2.1 From  https://centoshpc.wordpress.com  or https://github.com/aa3025/centos7hpc/
-    2.2 Uncompress the archive "tar xvf centos7hpc.tar.gz"  (or whichever you downloaded)
+    
+    2.2 Uncompress the archive or clone our project's git tree .
+    
     2.3 If you failed to do above steps do not proceed further.
+    
+    Please do not e-mail me asking for support. These scripts are not guaranteed to work and are provided for your self-development. E-mail me though if you are interested to join this project and contribute to its development on GitHub.
 
 3) cd HPC
 
