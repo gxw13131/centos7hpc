@@ -22,6 +22,7 @@ yum -y groupinstall "Development Tools"
 
 yum -y install octave psmisc ganglia ganglia-web ganglia-gmond ganglia-gmetad environment-modules  atlas blas lapack mpich2 atlas-devel mpich2-devel gcc gcc-c++ make  blas-devel liblas liblas-devel compat-libstdc++-33
 
+mkdir -p /share/installs
 cp /etc/hosts /share/installs/hosts
 
 pdsh cp /share/installs/hosts /etc/hosts
