@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# here we create rc.local file on the nodes
+pdsh "rm -f /etc/rc.local"
+
+pdsh "echo \#!/bin/bash > /etc/rc.local"
+pdsh "echo touch /var/lock/subsys/local >> /etc/rc.local"
+#pdsh "echo ifup ib0 >> /etc/rc.local"
+pdsh "echo mount /home >> /etc/rc.local"
+pdsh "echo mount /share >> /etc/rc.local"
+
+#pdsh "echo /share/apps/knem-1.1.2/sbin/knem_local_install >> rc.local"
+#pdsh "echo modprobe knem >> /etc/rc.local"
+
