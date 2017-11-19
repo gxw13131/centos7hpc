@@ -31,7 +31,9 @@ pdsh cp /share/installs/hosts /etc/hosts
 # update master
 yum -y update
 
-
+# update ganglia's gmond and gmetad conf files
+./update_ganglias.sh 
+# check http://master/ganglia afterwards
 
 #### openmpi ####
 
