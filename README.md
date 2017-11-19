@@ -1,8 +1,8 @@
 # centos7hpc
 collection of bash scripts and config files to automatically deploy CentOS7-based HPC with PXE-install and kickstart 
-This set of scripts allows to automatically deploy Centos7-based HPC
+This set of scripts allows to automatically deploy Centos7-based HPC. Project's webpage is here: https://centoshpc.wordpress.com/
 
-Follow these steps:
+Deployment steps:
 
 1) install the master node (a.k.a. server, head node) using default CenOS Live or Minimal ISO, boot the server, make sure the network is up, proceed further from its terminal.
 Do not add any users during initial installation of the head node (only root)
