@@ -1,6 +1,5 @@
 # centos7hpc
-collection of bash scripts and config files to automatically deploy CentOS7-based HPC with PXE-install and kickstart 
-This set of scripts allows to automatically deploy Centos7-based HPC. Project's webpage is here: https://centoshpc.wordpress.com/
+This project is collection of bash scripts and config files to automatically deploy CentOS7-based HPC with PXE-install and kickstart file. It allows to automatically deploy Centos7-based HPC. Project's webpage is here: https://centoshpc.wordpress.com/
 
 Deployment steps:
 
