@@ -27,8 +27,8 @@ globals {
  * tag that will wrap all hosts collected by this instance.
  */
 cluster {
-  name = "mercury"
-  owner = "Coventry University"
+  name = "My CentOS HPC"
+  owner = ""
   latlong = "unspecified"
   url = "unspecified"
 }
@@ -48,7 +48,7 @@ udp_send_channel {
                        # interface and the DNS names associated with
                        # those IPs will be used to create the RRDs.
   #mcast_join = 239.2.11.71
-  host = mercury
+  host = master
   port = 8649
   ttl = 1
 }
