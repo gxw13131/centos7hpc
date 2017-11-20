@@ -29,8 +29,8 @@ cp /etc/munge/munge.key /share/installs/munge/
 pdsh /share/installs/munge/munge_nodes.sh
 
 # Tests:
-munge -n
-munge -n | unmunge          # Displays information about the MUNGE key
-munge -n | ssh node150 unmunge
-remunge
+#munge -n
+#munge -n | unmunge          # Displays information about the MUNGE key
+#munge -n | ssh node2 unmunge
+#remunge
 
