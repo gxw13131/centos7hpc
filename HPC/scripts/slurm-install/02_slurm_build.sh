@@ -6,18 +6,17 @@
 #./01_munge_master.sh
 
 
-#SLURM building
+# SLURM rpms building on master
 
 ## prerequisites
 yum -y install openssl openssl-devel pam-devel numactl numactl-devel hwloc hwloc-devel lua lua-devel readline-devel rrdtool-devel ncurses-devel man2html libibmad libibumad perl-ExtUtils-MakeMaker 
 
-### pdsh "yum -y install openssl openssl-devel pam-devel numactl numactl-devel hwloc hwloc-devel lua lua-devel readline-devel rrdtool-devel ncurses-devel man2html libibmad libibumad"
-
-
 yum -y install mariadb-server mariadb-devel 
 
-
+# Getting last version of slurm
 wget https://download.schedmd.com/slurm/slurm-17.02.9.tar.bz2
+# you can also get bleeding edge source from github
+# git clone git://github.com/SchedMD/slurm.git
 
 rpmbuild -ta slurm-*.*.*.tar.bz2
 
