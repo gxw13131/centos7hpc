@@ -1,0 +1,17 @@
+Execute only following scripts to install slurm
+
+./01_*
+./02_*
+./03_*
+./04_*
+./05_*
+
+
+Few config files are included in this folder. 
+There is a bug with slurm and systemctl. 
+The update_slurm.sh script will replace default 
+slurm.service file on the nodes to use different 
+location of SlurmdPidfile (must be also the same stated in slurm.conf)
+
+
+Mysql Accounting is not configured yet
