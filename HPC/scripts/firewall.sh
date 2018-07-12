@@ -4,9 +4,9 @@
 
 
 if [ $# -eq 0 ]
-  then
-	eth_ext="enp0s3"
-	eth_int="enp0s8"
+then
+	echo "Usage: ./firewall.sh <eth_int_name> <eth_ext_name>
+	exit 0	
 else
 
 	eth_int=$1
@@ -22,8 +22,9 @@ sysctl -w net.ipv4.ip_forward=1
 echo "net.ipv4.ip_forward = 1" > /etc/sysctl.d/ip_forward.conf
 
 
-firewall-cmd --zone=internal --change-interface=$eth_int
-firewall-cmd --zone=external --change-interface=$eth_ext
+firewall-cmd --zone=internal --permanent --change-interface=$eth_int
+firewall-cmd --zone=external --permanent --change-interface=$eth_ext
+firewall-cmd --reload
 
 firewall-cmd --permanent --zone=internal --add-service=tftp
 firewall-cmd --permanent --zone=internal --add-service=dns
@@ -49,5 +50,5 @@ firewall-cmd --permanent --direct --passthrough ipv4 -I FORWARD -i $eth_int -j A
 firewall-cmd --reload
 
 #systemctl restart network
-systemctl restart firewalld
-firewall-cmd --get-active-zones
+#systemctl restart firewalld
+#firewall-cmd --get-active-zones
