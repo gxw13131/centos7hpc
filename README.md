@@ -10,7 +10,7 @@ Do not add any users during initial installation of the head node (only root). Y
 
     2.1 From  https://centoshpc.wordpress.com  or https://github.com/aa3025/centos7hpc/
     
-    2.2 Uncompress the archive or clone our project's git tree .
+    2.2 Uncompress the archive or clone our project's git tree "git clone https://github.com/aa3025/centos7hpc.git"
     
     2.3 If you failed to do above steps do not proceed further.
     
